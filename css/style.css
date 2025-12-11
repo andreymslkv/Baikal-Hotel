@@ -61,6 +61,11 @@
   font-display: swap;
 }
 
+:root {
+  --primary-text-color: #686868;
+  --accent-text-color: #2f70d9;
+}
+
 *,
 *::before,
 *::after {
@@ -99,6 +104,28 @@ input[type="button"] {
   cursor: pointer;
   outline: none;
 }
+
+.header {}
+
+.container {}
+
+.header__logo {}
+
+.header__logo-img {}
+
+.menu {}
+
+.menu__list {}
+
+.menu__item {}
+
+.menu__link {}
+
+.menu__link_active {}
+
+.header__button {}
+
+.header__button_callback {}
 
 /* Позиционирование */
 
