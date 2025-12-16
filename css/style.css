@@ -187,6 +187,33 @@ input[type="button"] {
   color: var(--primary-text-color);
 }
 
+.hero {
+  display: flex;
+  gap: 27px;
+}
+
+.hero__content {
+  max-width: 497px;
+}
+
+.hero__wave {}
+
+.hero__subtitle {
+  margin: 0;
+  font-weight: 700;
+}
+
+.hero__title {
+  margin: 0;
+  color: rgba(47, 112, 217, 1);
+  font-family: "Lora", serif;
+  font-size: 131px;
+  font-weight: 700;
+}
+
+.hero__button {}
+
+.hero__image {}
 
 /* Позиционирование */
 
