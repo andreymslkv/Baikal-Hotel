@@ -307,7 +307,19 @@ input[type="button"] {
   height: 9px;
 }
 
-.about__image {}
+.offers {}
+
+.wave {}
+
+.offers__list {}
+
+.offers__item {}
+
+.offers__icon {}
+
+.offers__title {}
+
+.offers__description {}
 
 /* Позиционирование */
 
