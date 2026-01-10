@@ -174,7 +174,7 @@
         </ul>
       </section>
       <section class="rooms-section">
-        <span class="wave">
+        <span class="rooms__decor-wave">
           <img src="./images/section-wave.svg" alt="wave">
         </span>
         <h2 class="section-title">
@@ -182,12 +182,15 @@
         </h2>
 
         <div class="rooms-grid">
-          <article class="room-card">
-            <div class="room-icon">
+          <div class="rooms-image__left">
+            <img src="./images/room-left.svg" alt="boy">
+          </div>
+          <article class="rooms-card">
+            <div class="rooms-icon">
               <img src="./images/one-bedroom.svg" alt="Иконка одноместного номера.">
             </div>
-            <h3>Одноместный номер</h3>
-            <ul>
+            <h3 class="rooms-card__title">Одноместный номер</h3>
+            <ul class="rooms-card__list">
               <li>Душ</li>
               <li>Кровать</li>
               <li>Телевизор</li>
@@ -195,15 +198,18 @@
               <li>Что-то ещё</li>
               <li>Что-то ещё</li>
             </ul>
-            <p class="price">Стоимость: 1000 ₽ / сутки</p>
+            <div class="price">
+              <span>Стоимость:</span>
+              <span>1000 ₽ <span class="slash">/</span> сутки</span>
+            </div>
           </article>
 
-          <article class="room-card">
-            <div class="room-icon">
+          <article class="rooms-card">
+            <div class="rooms-icon">
               <img src="./images/two-bedroom.svg" alt="Иконка двухместного номера.">
             </div>
-            <h3>Двухместный номер</h3>
-            <ul>
+            <h3 class="rooms-card__title">Двухместный номер</h3>
+            <ul class="rooms-card__list">
               <li>Душ</li>
               <li>Кровать</li>
               <li>Телевизор</li>
@@ -211,8 +217,14 @@
               <li>Что-то ещё</li>
               <li>Что-то ещё</li>
             </ul>
-            <p class="price">Стоимость: 2000 ₽ / сутки</p>
+            <div class="price">
+              <span>Стоимость:</span>
+              <span>2000 ₽ <span class="slash">/</span> сутки</span>
+            </div>
           </article>
+          <div class="rooms-image__right">
+            <img src="./images/room-right.svg" alt="girl">
+          </div>
         </div>
       </section>
 

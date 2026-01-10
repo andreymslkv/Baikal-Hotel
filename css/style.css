@@ -370,6 +370,103 @@ input[type="button"] {
   color: rgba(104, 104, 104, 1);
 }
 
+.rooms-section {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.rooms__decor-wave {
+  position: absolute;
+  top: 45px;
+  left: 207px;
+}
+
+.rooms-grid {
+  display: flex;
+  column-gap: 30px;
+}
+
+.rooms-image__left {
+  padding: 80px 0;
+  width: 285px;
+  height: 410px;
+}
+
+.rooms-image__right {
+  padding: 80px 0;
+  width: 285px;
+  height: 410px;
+}
+
+.rooms-card {
+  padding: 40px 31px;
+  width: 285px;
+  height: 570px;
+  border: 3px solid rgba(47, 112, 217, 1);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 1);
+}
+
+.rooms-icon {
+  margin-bottom: 30px;
+}
+
+.rooms-card__title {
+  margin-bottom: 30px;
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  color: rgba(47, 112, 217, 1);
+}
+
+.rooms-card__list li:first-child {
+  list-style-type: none;
+}
+
+.rooms-card__list li:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.rooms-card__list li:last-child {
+  margin-bottom: 30px;
+}
+
+.rooms-card__list {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 3%;
+  color: rgba(104, 104, 104, 1);
+  list-style-type: disc;
+}
+
+.rooms-card__list li::marker {
+  width: 10px;
+  height: 10px;
+  color: #686868;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 167px;
+  height: 62px;
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  color: rgba(47, 112, 217, 1);
+}
+
+.slash {
+  height: 25px;
+  color: rgba(217, 88, 69, 1);
+}
+
 /* Позиционирование */
 
 /* Блочная модель */
