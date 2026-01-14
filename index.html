@@ -6,12 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Baikal Hotel</title>
   <link rel="stylesheet" href="./css/style.css">
+  <script defer src="./js/main.js"></script>
 </head>
 
 <body>
   <header class="header">
     <div class="container header__container">
-      <a class="header__logo">
+      <a class="header__logo" href="#home">
         <img class="header__logo-img" src="./images/logo.svg" alt="Логотип сайта">
       </a>
       <nav class="menu" aria-label="navigation">
@@ -50,7 +51,7 @@
   </header>
   <main class="main">
     <div class="container">
-      <section class="hero">
+      <section class="hero" id="home">
         <div class="hero__content">
           <div class="hero-content-top">
             <span class="hero__decor-wave">
@@ -67,7 +68,7 @@
               внимательным
               сервисом. Погрузитесь в&nbsp;атмосферу спокойствия и&nbsp;природной красоты.
             </p>
-            <button class="hero__book-button">
+            <button class="hero__book-button callback-btn">
               Забронировать
             </button>
           </div>
@@ -76,7 +77,7 @@
           <img src="./images/hero.svg" alt="Картинка люди с чемоданом у гостиницы.">
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="about__content">
           <span class="about__content--decor-wave">
             <img src="./images/section-wave.svg" alt="wave">
@@ -102,7 +103,7 @@
           <img src="./images/about.svg" alt="Картинка люди у стойки регистратора.">
         </div>
       </section>
-      <section class="offers">
+      <section class="offers" id="advantages">
         <span class="offers__decor-wave">
           <img src="./images/section-wave.svg" alt="wave">
         </span>
@@ -164,7 +165,7 @@
           </li>
         </ul>
       </section>
-      <section class="rooms-section">
+      <section class="rooms-section" id="rooms">
         <span class="rooms__decor-wave">
           <img src="./images/section-wave.svg" alt="wave">
         </span>
@@ -219,7 +220,7 @@
         </div>
       </section>
 
-      <section class="reviews">
+      <section class="reviews" id="reviews">
         <span class="reviews__decor-wave">
           <img src="./images/section-wave.svg" alt="wave">
         </span>
@@ -285,7 +286,7 @@
         </div>
       </section>
 
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="contacts__content">
           <span class="contacts__decor-wave">
             <img src="./images/section-wave.svg" alt="wave">
@@ -330,27 +331,31 @@
           </h2>
           <ul class="footer-nav__list">
             <li class="footer-nav__item">
-              <a class="footer-nav__link" href="/">Главная</a>
+              <a class="footer-nav__link" href="#home">Главная</a>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link" href="/about">О гостинице</a>
+              <a class="footer-nav__link" href="#about">О гостинице</a>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link" href="/advantages">Преимущества</a>
+              <a class="footer-nav__link" href="#advantages">Преимущества</a>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link" href="/rooms">Номера</a>
+              <a class="footer-nav__link" href="#rooms">Номера</a>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link" href="/reviews">Отзывы</a>
+              <a class="footer-nav__link" href="#reviews">Отзывы</a>
             </li>
           </ul>
         </nav>
 
         <div class="footer__quick-contact">
           <h3>Быстрая связь</h3>
-          <button class="btn btn-primary" type="button">Забронировать</button>
-          <button class="btn btn-secondary" type="button">Обратный звонок</button>
+          <button class="btn btn-primary book-button" type="button">
+            Забронировать
+          </button>
+          <button class="btn btn-secondary callback-btn" type="button">
+            Обратный звонок
+          </button>
         </div>
 
         <button class="goup-arrow">
@@ -383,6 +388,38 @@
       <p class="copyright">© Все права защищены.</p>
     </div>
   </footer>
+
+  <!-- Нативное модальное окно -->
+  <dialog class="contact-dialog">
+    <span class="contact-dialog__decor-wave">
+      <img src="./images/section-wave.svg" alt="wave">
+    </span>
+    <h2 class="contact-dialog__title">
+      Заполните форму!
+    </h2>
+    <p class="contact-dialog__text">
+      И наш специалист свяжется с вами в ближайшее время.
+    </p>
+
+    <form action="#" method="POST" id="contact-form">
+      <input type="text" class="name-input" required placeholder="Ваше имя">
+      <input type="tel" class="phone-input" required placeholder="Телефон:  8999">
+      <textarea class=" comment-textarea" placeholder="Комментарий"></textarea>
+
+      <button class="contact-dialog__btn" type="submit">Отправить</button>
+    </form>
+  </dialog>
+
+  <!-- Окно подтверждения -->
+  <dialog class="confirmation-dialog">
+    <div class="success">
+      <span class="checkmark">
+        <img src="./images/success.svg" alt="success">
+      </span>
+      <h2>Спасибо за заявку!</h2>
+    </div>
+  </dialog>
+
 
 </body>
 
