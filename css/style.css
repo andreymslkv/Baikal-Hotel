@@ -126,6 +126,8 @@ input[type="button"] {
 .container {
   margin: 0 auto;
   max-width: 1230px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .header {
@@ -167,7 +169,7 @@ input[type="button"] {
 .menu__link {
   font-size: 18px;
   font-weight: 400;
-  color: rgba(104, 104, 104, 1);
+  color: #686868;
 }
 
 .menu__link:hover {
@@ -193,7 +195,6 @@ input[type="button"] {
   padding: 8px 20px;
   font-weight: 600;
   font-size: 18px;
-  border: none;
   border: 2px solid var(--accent-text-color);
   border-radius: 5px;
   background-color: #fff;
@@ -222,7 +223,7 @@ input[type="button"] {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  color: rgba(104, 104, 104, 1);
+  color: var(--primary-text-color);
 }
 
 .hero__decor-wave {
@@ -240,12 +241,12 @@ input[type="button"] {
 .hero__title {
   margin-bottom: 40px;
   max-width: 497px;
-  color: rgba(47, 112, 217, 1);
   font-family: "Lora", serif;
   font-weight: 700;
   font-size: 131px;
   line-height: 67px;
   letter-spacing: 4px;
+  color: var(--accent-text-color);
 }
 
 .hero__book-button {
@@ -280,7 +281,7 @@ input[type="button"] {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  color: rgba(104, 104, 104, 1);
+  color: var(--primary-text-color);
 }
 
 .about__content p {
@@ -293,7 +294,7 @@ input[type="button"] {
   font-size: 50px;
   font-weight: 700;
   line-height: 100%;
-  color: rgba(47, 112, 217, 1);
+  color: #2f70d9;
 }
 
 .about__content--decor-wave {
@@ -328,7 +329,7 @@ input[type="button"] {
   font-size: 50px;
   line-height: 100%;
   letter-spacing: 3%;
-  color: rgba(47, 112, 217, 1);
+  color: var(--accent-text-color);
 }
 
 .offers__list {
@@ -361,7 +362,7 @@ input[type="button"] {
   font-size: 20px;
   line-height: 100%;
   text-align: center;
-  color: rgba(47, 112, 217, 1);
+  color: var(--accent-text-color);
 }
 
 .offers__description {
@@ -369,7 +370,7 @@ input[type="button"] {
   font-size: 14px;
   line-height: 19px;
   text-align: center;
-  color: rgba(104, 104, 104, 1);
+  color: var(--primary-text-color);
 }
 
 .rooms-section {
@@ -405,9 +406,9 @@ input[type="button"] {
   padding: 40px 31px;
   width: 285px;
   height: 570px;
-  border: 3px solid rgba(47, 112, 217, 1);
+  border: 3px solid var(--accent-text-color);
   border-radius: 20px;
-  background: rgba(255, 255, 255, 1);
+  background: #ffffff;
 }
 
 .rooms-icon {
@@ -420,7 +421,7 @@ input[type="button"] {
   font-weight: 700;
   font-size: 20px;
   line-height: 100%;
-  color: rgba(47, 112, 217, 1);
+  color: var(--accent-text-color);
 }
 
 .rooms-card__list li:first-child {
@@ -440,14 +441,14 @@ input[type="button"] {
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 3%;
-  color: rgba(104, 104, 104, 1);
+  color: var(--primary-text-color);
   list-style-type: disc;
 }
 
 .rooms-card__list li::marker {
   width: 10px;
   height: 10px;
-  color: #686868;
+  color: var(--primary-text-color);
 }
 
 .price {
@@ -461,12 +462,12 @@ input[type="button"] {
   font-weight: 700;
   font-size: 20px;
   line-height: 100%;
-  color: rgba(47, 112, 217, 1);
+  color: var(--accent-text-color);
 }
 
 .slash {
   height: 25px;
-  color: rgba(217, 88, 69, 1);
+  color: #d95845;
 }
 
 .reviews {
@@ -495,7 +496,7 @@ input[type="button"] {
   width: 285px;
   border-radius: 20px;
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.1);
-  background: rgba(255, 255, 255, 1);
+  background: #ffffff;
 }
 
 .review-avatar {
@@ -506,7 +507,7 @@ input[type="button"] {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: rgba(190, 190, 190, 1);
+  background: #bebebe;
   overflow: hidden;
 }
 
@@ -529,7 +530,7 @@ input[type="button"] {
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 3%;
-  color: rgba(47, 112, 217, 1);
+  color: var(--accent-text-color);
 }
 
 .review-content p {
@@ -538,7 +539,7 @@ input[type="button"] {
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 3%;
-  color: rgba(104, 104, 104, 1);
+  color: var(--primary-text-color);
 }
 
 time {
@@ -546,7 +547,7 @@ time {
   font-weight: 300;
   line-height: 19px;
   letter-spacing: 3%;
-  color: rgba(104, 104, 104, 1);
+  color: var(--primary-text-color);
 }
 
 .contacts {
@@ -566,7 +567,7 @@ time {
   max-width: 355px;
   border-radius: 20px;
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.15);
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #ffffff;
 }
 
 .contacts__decor-wave {
@@ -586,7 +587,7 @@ time {
   font-size: 18px;
   line-height: 25px;
   letter-spacing: 5%;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
 }
 
 .address p {
@@ -595,7 +596,7 @@ time {
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 3%;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
 }
 
 .phone {
@@ -607,7 +608,7 @@ time {
   font-size: 30px;
   line-height: 100%;
   letter-spacing: 3%;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
 }
 
 .socials:first-child {
@@ -645,7 +646,7 @@ time {
   font-size: 20px;
   line-height: 100%;
   letter-spacing: 3%;
-  color: rgba(47, 112, 217, 1);
+  color: var(--accent-text-color);
 }
 
 .footer-nav__list {
@@ -659,7 +660,7 @@ time {
   font-size: 18px;
   line-height: 100%;
   letter-spacing: 3%;
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
 }
 
 .footer__quick-contact {
@@ -675,7 +676,7 @@ time {
   font-size: 20px;
   line-height: 100%;
   letter-spacing: 3%;
-  color: rgba(47, 112, 217, 1);
+  color: var(--accent-text-color);
 }
 
 .btn {
@@ -692,7 +693,7 @@ time {
   font-size: 18px;
   letter-spacing: 0.03em;
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.1);
-  background: rgba(217, 88, 69, 1);
+  background: #d95845;
   color: #ffffff;
 }
 
@@ -700,7 +701,7 @@ time {
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.03em;
-  border: 2px solid rgba(47, 112, 217, 1);
+  border: 2px solid var(--accent-text-color);
   background-color: transparent;
   color: #007bff;
 }
@@ -719,7 +720,7 @@ time {
   font-size: 20px;
   line-height: 100%;
   letter-spacing: 3%;
-  color: rgba(47, 112, 217, 1);
+  color: var(--accent-text-color);
 }
 
 .footer__address {
@@ -727,7 +728,7 @@ time {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
 }
 
 .footer__address p {
@@ -740,7 +741,7 @@ time {
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
 }
 
 .footer__phone--mobile {
@@ -765,7 +766,7 @@ time {
   font-size: 16px;
   line-height: 100%;
   text-align: center;
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
 }
 
 .contact-dialog {
@@ -775,7 +776,7 @@ time {
   border: none;
   border-radius: 20px;
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.15);
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #ffffff;
 }
 
 .contact-dialog form {
@@ -797,7 +798,7 @@ time {
   font-size: 50px;
   line-height: 100%;
   letter-spacing: 3%;
-  color: rgba(47, 112, 217, 1);
+  color: var(--accent-text-color);
 }
 
 .contact-dialog__text {
@@ -807,7 +808,7 @@ time {
   font-weight: 400;
   line-height: 22px;
   text-align: center;
-  color: rgba(104, 104, 104, 1);
+  color: var(--primary-text-color);
 }
 
 .name-input {
@@ -818,7 +819,7 @@ time {
   border: none;
   border-radius: 10px;
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.1);
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #ffffff;
 }
 
 .name-input::placeholder {
@@ -827,7 +828,7 @@ time {
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 5%;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
 }
 
 .phone-input {
@@ -838,7 +839,7 @@ time {
   border: none;
   border-radius: 10px;
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.25);
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #ffffff;
 }
 
 .phone-input::placeholder {
@@ -847,7 +848,7 @@ time {
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 5%;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
 }
 
 .comment-textarea {
@@ -858,7 +859,7 @@ time {
   border: none;
   border-radius: 10px;
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.1);
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #ffffff;
 }
 
 .comment-textarea::placeholder {
@@ -867,7 +868,7 @@ time {
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 5%;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
 }
 
 .contact-dialog__btn {
@@ -892,7 +893,7 @@ time {
   max-height: 500px;
   border: none;
   border-radius: 20px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -911,7 +912,7 @@ time {
   font-weight: 700;
   font-size: 50px;
   line-height: 100%;
-  color: rgba(47, 112, 217, 1);
+  color: var(--accent-text-color);
 }
 
 .checkmark {
@@ -919,6 +920,18 @@ time {
   align-items: center;
   justify-content: center;
   margin-bottom: 40px;
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 730px;
+  }
+}
+
+@media (max-width: 786px) {
+  .container {
+    max-width: px;
+  }
 }
 
 @media (max-width: 320px) {
