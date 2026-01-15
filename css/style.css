@@ -920,6 +920,12 @@ time {
   margin-bottom: 40px;
 }
 
+@media (max-width: 320px) {
+  .container {
+    max-width: 272px;
+  }
+}
+
 /* Позиционирование */
 
 /* Блочная модель */
