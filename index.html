@@ -12,9 +12,20 @@
 <body>
   <header class="header">
     <div class="container header__container">
+
       <a class="header__logo" href="/">
         <img class="header__logo-img" src="./images/logo.svg" alt="Логотип сайта">
       </a>
+
+      <button class="header__burger-btn">
+        <span class="icon-open">
+          <img src="./images/burger-closed.svg" alt="open">
+        </span>
+        <span class="icon-close hidden">
+          <img src="./images/burger-opened.svg" alt="close">
+        </span>
+      </button>
+
       <nav class="menu" aria-label="navigation">
         <ul class="menu__list">
           <li class="menu__item">
@@ -47,6 +58,8 @@
         <button class="header__button header__button_callback">
           Обратный звонок
         </button>
+
+
       </nav>
 
     </div>

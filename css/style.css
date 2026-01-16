@@ -141,21 +141,29 @@ input[type="button"] {
   justify-content: space-between;
 }
 
+.header__burger-btn {
+  display: none;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: #ffffff;
+}
+
 .header__logo {
   display: block;
   width: 100px;
   margin-right: 209px;
 }
 
-/* .header__logo-img {
-  width: 100%;
-} */
-
 .menu {
   display: flex;
   align-items: center;
   margin: 0;
   padding: 0;
+}
+
+.menu--active {
+  display: flex;
 }
 
 .menu__list {
@@ -170,17 +178,15 @@ input[type="button"] {
   font-size: 18px;
   font-weight: 400;
   color: #686868;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
 .menu__link:hover {
   color: #007bff;
 }
 
-.menu__link_active {
-  color: var(--primary-text-color);
-}
-
-.menu__link_active::after {
+.menu__link::after {
   content: '';
   display: block;
   width: 100%;
@@ -188,7 +194,16 @@ input[type="button"] {
   background: url('../images/wave-nav.svg');
   background-size: 100% 100%;
   margin-top: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
 
+.menu__link_active {
+  color: var(--primary-text-color);
+}
+
+.menu__link_active::after {
+  opacity: 1;
 }
 
 .header__button {
@@ -955,6 +970,26 @@ time {
   }
 }
 
+@media (max-width: 1100px) {
+  .header__logo {
+    margin-right: 50px;
+  }
+
+  .menu__list {
+    margin-right: 30px;
+    gap: 20px;
+  }
+
+  .menu__link {
+    font-size: 15px;
+  }
+
+  .header__button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 926px) {
   .header__button {
     padding: 5px 12px;
@@ -968,7 +1003,82 @@ time {
 
 @media (max-width: 851px) {
   .menu {
+    position: absolute;
+    top: 80px;
+    right: 0;
     display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 24px;
+    width: 320px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: -5px 5px 15px 0px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.3s ease-out;
+    z-index: 100;
+  }
+
+  .menu--active {
+    display: flex;
+  }
+
+  .menu__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 40px 0;
+  }
+
+  .menu__item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .menu__link {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100%;
+    color: var(--primary-text-color);
+  }
+
+  .menu__link::after {
+    display: inline-block;
+    width: 98px;
+    height: 9px;
+    margin-top: 0;
+    margin-left: 30px;
+    flex-shrink: 0;
+  }
+
+  .header__burger-btn {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .icon-open,
+  .icon-close {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .header__button {
+    margin-bottom: 40px;
   }
 }
 
